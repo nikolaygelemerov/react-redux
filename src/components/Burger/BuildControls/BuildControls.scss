@@ -1,4 +1,6 @@
 .BuildControls {
+  position: fixed;
+  bottom: 0;
   width: 100%;
   background-color: #cf8f2e;
   display: flex;
@@ -7,6 +9,10 @@
   box-shadow: 0 2px 1px #ccc;
   margin: auto;
   padding: 10px 0;
+
+  @media (max-height: 600px) {
+    position: static;
+  }
 }
 
 .OrderButton {

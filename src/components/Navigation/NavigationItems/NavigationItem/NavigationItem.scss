@@ -21,4 +21,23 @@
       color: white;
     }
   }
+
+  @media (max-width: 500px) {
+    margin: 10px 0;
+    width: 100%;
+
+    a {
+      color: #8f5c2c;
+      text-decoration: none;
+      width: 100%;
+      height: 100%;
+
+      &:hover,
+      &:active,
+      &.active {
+        color: #40a4c8;
+        background-color: transparent;
+      }
+    }
+  }
 }
