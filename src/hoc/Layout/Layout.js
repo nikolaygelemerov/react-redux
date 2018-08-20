@@ -1,6 +1,5 @@
 import React, { Fragment, Component } from 'react';
 
-import Aux from '../Aux'; //can be replaced with React.Fragment since React 16.2
 import styles from './Layout.scss';
 import Toolbar from '../../components/Navigation/Toolbar/Toolbar';
 import SideDrawer from '../../components/Navigation/SideDrawer/SideDrawer';

@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { withRouter } from 'react-router-dom';
 
 import styles from './Burger.scss';
 import BurgerIngredient from './Burgeringredient/Burgeringredient';
@@ -10,10 +11,7 @@ class Burger extends Component {
     this.burgerRef = React.createRef();
   }
 
-  componentDidMount() {
-    //console.log('burgerRef: ', this.burgerRef);
-    //console.log('height: ', this.burgerRef.current.clientHeight);
-  }
+  componentDidMount() {}
 
   render() {
     let transformedIngredients = Object.keys(this.props.ingredients)
@@ -49,4 +47,4 @@ class Burger extends Component {
   }
 }
 
-export default Burger;
+export default withRouter(Burger);

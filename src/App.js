@@ -9,14 +9,14 @@ import Checkout from './containers/Checkout/Checkout';
 class App extends Component {
   render() {
     return (
-      <StrictMode>
-        <Layout>
-          <Switch>
-            <Route path="/checkout" component={Checkout} />
-            <Route path="/" exact component={BurgerBuilder} />
-          </Switch>
-        </Layout>
-      </StrictMode>
+      // <StrictMode>
+      <Layout>
+        <Switch>
+          <Route path="/checkout" component={Checkout} />
+          <Route path="/" exact component={BurgerBuilder} />
+        </Switch>
+      </Layout>
+      // </StrictMode>
     );
   }
 }
