@@ -4,6 +4,7 @@ import styles from './Modal.scss';
 import Backdrop from '../Backdrop/Backdrop';
 
 class Modal extends Component {
+  componentDidMount() {}
   shouldComponentUpdate(nextProps, nextState) {
     return (
       nextProps.show !== this.props.show ||

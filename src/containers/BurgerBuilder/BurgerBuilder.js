@@ -25,10 +25,12 @@ class BurgerBuilder extends Component {
   };
 
   componentDidMount() {
+    this.pest = 323;
     this.fetchIngredients();
   }
 
   fetchIngredients = async () => {
+    console.log('this.pest: ', this.pest);
     try {
       let response = await axios.get('ingredients.json');
 
